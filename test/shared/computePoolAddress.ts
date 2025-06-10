@@ -1,4 +1,4 @@
-import { bytecode } from '@synthra-swap/v3-core/artifacts/contracts/UniswapV3Pool.sol/UniswapV3Pool.json'
+import { bytecode } from '@synthra-swap/v3-core/artifacts/contracts/SynthraV3Pool.sol/SynthraV3Pool.json'
 import { utils } from 'ethers'
 
 export const POOL_BYTECODE_HASH = utils.keccak256(bytecode)
@@ -9,6 +9,8 @@ export function computePoolAddress(factoryAddress: string, [tokenA, tokenB]: [st
     ['address', 'address', 'uint24'],
     [token0, token1, fee]
   )
+
+  console.log(POOL_BYTECODE_HASH)
   const create2Inputs = [
     '0xff',
     factoryAddress,
