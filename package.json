@@ -5,7 +5,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "1.4.4",
+  "version": "1.4.5",
   "keywords": [
     "synthra",
     "uniswap",
@@ -27,7 +27,7 @@
   "dependencies": {
     "@nomicfoundation/hardhat-verify": "^2.0.13",
     "@openzeppelin/contracts": "3.4.2-solc-0.7",
-    "@synthra-swap/v3-core": "^1.0.1",
+    "@synthra-swap/v3-core": "^1.0.6",
     "@uniswap/lib": "^4.0.1-alpha",
     "@uniswap/v2-core": "^1.0.1",
     "@uniswap/v3-core": "^1.0.0",
